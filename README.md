@@ -21,18 +21,24 @@ npm install && npm run build
 node dist/index.js
 ```
 
-## Add to Claude Code / opencode
+## Add to opencode
 
 ```json
 {
-  "mcpServers": {
+  "mcp": {
     "wallapop": {
-      "type": "stdio",
-      "command": "node",
-      "args": ["/absolute/path/to/WallapopMCP/dist/index.js"]
+      "type": "local",
+      "command": ["npx", "-y", "github:yHugoSoares/WallapopMCP"]
     }
   }
 }
+```
+
+## Run locally
+
+```bash
+npm install && npm run build
+node dist/index.js
 ```
 
 ## Examples
