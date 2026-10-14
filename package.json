@@ -2,6 +2,13 @@
   "name": "wallapop-mcp",
   "version": "0.1.0",
   "description": "MCP server for Wallapop marketplace scraper (search, listings, sellers, monitors)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yHugoSoares/WallapopMCP.git"
+  },
+  "homepage": "https://github.com/yHugoSoares/WallapopMCP#readme",
+  "keywords": ["mcp", "model-context-protocol", "wallapop", "marketplace", "scraper"],
+  "files": ["dist"],
   "type": "module",
   "main": "dist/index.js",
   "bin": {

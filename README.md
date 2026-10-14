@@ -21,7 +21,38 @@ npm install && npm run build
 node dist/index.js
 ```
 
-## Add to opencode
+## Install (any agent)
+
+No API key needed. All clients run it via `npx` straight from GitHub:
+
+### Claude Code
+
+```bash
+claude mcp add wallapop -- npx -y github:yHugoSoares/WallapopMCP
+```
+
+### Claude Desktop (`claude_desktop_config.json`)
+
+```json
+{
+  "mcpServers": {
+    "wallapop": {
+      "command": "npx",
+      "args": ["-y", "github:yHugoSoares/WallapopMCP"]
+    }
+  }
+}
+```
+
+### Codex (`~/.codex/config.toml`)
+
+```toml
+[mcp_servers.wallapop]
+command = "npx"
+args = ["-y", "github:yHugoSoares/WallapopMCP"]
+```
+
+### opencode (`opencode.jsonc`)
 
 ```json
 {
@@ -29,6 +60,19 @@ node dist/index.js
     "wallapop": {
       "type": "local",
       "command": ["npx", "-y", "github:yHugoSoares/WallapopMCP"]
+    }
+  }
+}
+```
+
+### Cursor (`.cursor/mcp.json`), VS Code (`.vscode/mcp.json`), Windsurf, generic `mcp.json`
+
+```json
+{
+  "mcpServers": {
+    "wallapop": {
+      "command": "npx",
+      "args": ["-y", "github:yHugoSoares/WallapopMCP"]
     }
   }
 }
