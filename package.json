@@ -1,5 +1,5 @@
 {
-  "name": "wallapop-mcp",
+  "name": "@yhugosoares/wallapop-mcp",
   "version": "0.1.0",
   "description": "MCP server for Wallapop marketplace scraper (search, listings, sellers, monitors)",
   "repository": {
