@@ -28,7 +28,7 @@ No API key needed. All clients run it via `npx` straight from GitHub:
 ### Claude Code
 
 ```bash
-claude mcp add wallapop -- npx -y github:yHugoSoares/WallapopMCP
+claude mcp add wallapop -- npx -y @yhugosoares/wallapop-mcp
 ```
 
 ### Claude Desktop (`claude_desktop_config.json`)
@@ -38,7 +38,7 @@ claude mcp add wallapop -- npx -y github:yHugoSoares/WallapopMCP
   "mcpServers": {
     "wallapop": {
       "command": "npx",
-      "args": ["-y", "github:yHugoSoares/WallapopMCP"]
+      "args": ["-y", "@yhugosoares/wallapop-mcp"]
     }
   }
 }
@@ -49,7 +49,7 @@ claude mcp add wallapop -- npx -y github:yHugoSoares/WallapopMCP
 ```toml
 [mcp_servers.wallapop]
 command = "npx"
-args = ["-y", "github:yHugoSoares/WallapopMCP"]
+args = ["-y", "@yhugosoares/wallapop-mcp"]
 ```
 
 ### opencode (`opencode.jsonc`)
@@ -59,7 +59,7 @@ args = ["-y", "github:yHugoSoares/WallapopMCP"]
   "mcp": {
     "wallapop": {
       "type": "local",
-      "command": ["npx", "-y", "github:yHugoSoares/WallapopMCP"]
+      "command": ["npx", "-y", "@yhugosoares/wallapop-mcp"]
     }
   }
 }
@@ -72,7 +72,7 @@ args = ["-y", "github:yHugoSoares/WallapopMCP"]
   "mcpServers": {
     "wallapop": {
       "command": "npx",
-      "args": ["-y", "github:yHugoSoares/WallapopMCP"]
+      "args": ["-y", "@yhugosoares/wallapop-mcp"]
     }
   }
 }
